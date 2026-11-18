@@ -1,0 +1,24 @@
+{
+  "name": "playwright-ecommerce-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UI + API test automation framework for an e-commerce flow, built with Playwright and TypeScript using the Page Object Model.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test --project=api",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test tests/ui --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
